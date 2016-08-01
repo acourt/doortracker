@@ -1,0 +1,5 @@
+    <ul>
+    {% for door in latest_door_list %}
+        <li><a href="{% url 'doorlogger:detail' door.id %}">{{ door.door_name }}</a></li>
+    {% endfor %}
+    </ul>
