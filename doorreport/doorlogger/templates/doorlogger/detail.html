@@ -1,0 +1,6 @@
+	<h1>{{ door.door_name }}</h1>
+	<ul>
+	{% for event in door.event_set.all %}
+	    <li>{{ event.event_type }}</li>
+	{% endfor %}
+	</ul>
